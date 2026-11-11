@@ -24,7 +24,7 @@ export default function TabsLayout() {
             <Ionicons
               name={focused ? "home" : "home-outline"}
               size={24}
-              color={color}
+              color={typeof color === "string" ? color : undefined}
             />
           ),
         }}
@@ -51,21 +51,21 @@ export default function TabsLayout() {
             <Ionicons
               name={focused ? "bag-handle" : "bag-outline"}
               size={24}
-              color={color}
+              color={typeof color === "string" ? color : undefined}
             />
           ),
         }}
       />
       <Tabs.Screen
-        name="search"
+        name="favorites"
         options={{
-          title: "Поиск",
+          title: "Избранное",
           headerShown: false,
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "search" : "search-outline"}
+              name={focused ? "heart" : "heart-outline"}
               size={24}
-              color={color}
+              color={typeof color === "string" ? color : undefined}
             />
           ),
         }}

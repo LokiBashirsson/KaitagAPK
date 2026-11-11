@@ -1,6 +1,6 @@
 import { globalStyles } from "@/shared/globalStyles/_global.styles";
 import { HomeIcon } from "@/shared/icons/HomeIcon";
-import { Ionicons } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { Text, View } from "react-native";
 
@@ -40,15 +40,16 @@ export default function Header() {
             <Text style={{ color: "#A99C8D" }}>Лента нашего района</Text>
           </View>
           <View>
-            <Ionicons
+            <MaterialCommunityIcons
               style={{
                 padding: 10,
-                borderWidth: 1,
-                borderColor: "#3A2A1A",
-                borderRadius: 100,
+                // borderWidth: 1,
+                // borderColor: "#3A2A1A",
+                // borderRadius: 100,
               }}
-              name="heart-outline"
-              size={24}
+              // name="heart-outline"
+              name="toggle-switch"
+              size={42}
               color={"#7A3E0A"}
             />
           </View>
